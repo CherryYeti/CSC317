@@ -1,84 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8"/>
-	<title>Jason Javandel - Portfolio</title>
-</head>
-	<body style="margin:0;box-sizing:border-box;background-color: #1c1c1c;color: white;">
-		<header>
-			<h1>Jason Javandel</h1>
-			<meta name="viewport" content="width=device-width, initial-scale=1" />
-		</header>
-		<nav>
-			<ul>
-				<li><a href="#school">School</a></li>
-				<li><a href="#hometown">Hometown</a></li>
-				<li><a href="#about">About</a></li>
-			</ul>
-		</nav>
-		<main>
-			<section id="school">
-				<h3>School</h3>
-				<img src="images/sfsu-logo.jpg" alt="San Francisco State University Logo" width=300/>
-				<p>San Francisco State University</p>
-			</section>
-			<section id="hometown">
-				<h3>Hometown</h3>
-				<img src="images/alameda.jpg" alt="Alameda Movie Theatre" width=300/>
-				<p>Alameda, California</p>
-			</section>
-			<section id="about">
-				<h3>About Me</h3>
-				<p>
-					Hello! I am a third year college student who believes in open source projects. I am majoring in computer science, and I love creating! I've been an avid linux user (Arch BTW) and advocate for the last 5 years, and I love working in Python and more recently, Zig . I started making websites when I was around 12, and since, I have learned how to work in React and Svelte.<br/><br/> Other than websites, I have spent considerable time learning Jetpack Compose, a framework for building native apps for Android, as well as flutter. I am one of the few people who loves writing documentation, as I find it extremely rewarding to make things easier for other people to understand. I also love working on my homelab, and I'm quite familiar with docker, though I want to learn how to use Proxmox and Kubernetes.
-				</p>
-				<p>I don't really have a professional photo, so here's one of my cats</p>
-								<img src="images/holly.jpg" alt="A picture of a black cat on a couch" width=300/>
+  <meta charset="UTF-8"/>
+  <title>Jason Javandel - Portfolio</title>
 
-			</section>
-			<section id="education">
-				<h3>Education</h3>
-				<ul>
-					<li>Alameda High School (2018-2022)</li>
-					<li>University of California, Merced (2022-2024)</li>
-					<li style="font-weight:bold">San Francisco State University (2024-present)</li>
-				</ul>
-			</section>
-			<section id="experience">
-				<h3>Experience</h3>
-				<table style="border:1px solid">
-					<tr>
-						<th style="border:1px solid">Position</th>
-						<th style="border:1px solid">Company</th>
-						<th style="border:1px solid">Dates</th>
-					</tr>
-					<tr>
-						<td style="border-right:1px solid">Assistant Coach</td>
-						<td>Future Star Baseball</td>
-						<td>2021-2023</td>
-					</tr>
-					
-				</table>
-			</section>
-			<section id="contact">
-				<h3>Contact</h3>
-				<form>
-					<p>Name:</p>
-					<input placeholder="Name"></input>
-					<p>Email:</p>
-					<input placeholder="Email"></input>
-					<p>Subject:</p>
-					<input placeholder="Subject"></input>
-					<p>Message:</p>
-					<textarea placeholder="Message"></textarea>
-					<br/>
-					<input type="submit" value="Submit">
-				</form>
-			</section>
-		</main>
-		<footer>
-			<p>&copy; 2025 Jason Javandel. All rights reserved.</p>
-			<p>Feel free to contact me at <a href="mailto:jasonjavandel@protonmail.com"/>jasonjavandel@protonmail.com</p>
-		</footer>
-	</body>
+</head>
+<body style="background-color:black; color:white; padding:20px;">
+  <header>
+    <h1>Jason Javandel</h1>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#school" style="color: red;">School</a></li>
+      <li><a href="#hometown" style="color: red;">Hometown</a></li>
+      <li><a href="#about" style="color: red;">About</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="school">
+      <h2>School</h2>
+      <img src="images/sfsu-logo.jpg" alt="San Francisco State University Logo" style="width:30vw; max-width: 400px;" />
+      <p>San Francisco State University</p>
+      <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=-122.48618602752687%2C37.718972229628875%2C-122.47671246528627%2C37.73013144497156&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?#map=17/37.724552/-122.481449">View Larger Map</a></small>
+    </section>
+    <section id="hometown">
+      <h2>Hometown</h2>
+      <img src="images/alameda.jpg" alt="Alameda Movie Theatre" style="width:30vw; max-width: 400px;"/>
+      <p>Alameda, California</p>
+    </section>
+    <section id="about" style="max-width: 1200px;">
+      <h2>About Me</h2>
+      <p>
+        Hello! I am a third year college student who believes in open source projects. I am majoring in computer science, and I love creating! I've been an avid linux user and advocate for the last 5 years, and I love working in Python and more recently, Zig . I started making websites when I was around 12, and since, I have learned how to work in React and Svelte. Other than websites, I have spent considerable time learning Jetpack Compose and Flutter, both are framework for building native apps for Android. I am one of the few people who loves writing documentation, as I find it extremely rewarding to make things easier for other people to understand. I also love working on my homelab, and I'm quite familiar with Docker, though I want to learn how to use Proxmox and Kuberentes.
+      </p>
+      <p>I don't really have a professional photo, so here's one of my cats:</p>
+      <img src="images/holly.jpg" alt="A picture of a black cat on a couch" style="width:30vw; max-width: 400px;"/>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>Alameda High School (2018-2022)</li>
+        <li>University of California, Merced (2022-2024)</li>
+        <li style="font-weight:bold">San Francisco State University (2024-present)</li>
+      </ul>
+    </section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <table style="border:1px solid; width:90vw; max-width: 1400px;">
+        <tr>
+          <th>Position</th>
+          <th>Company</th>
+          <th>Dates</th>
+        </tr>
+        <tr>
+          <td style="text-align: center;">Assistant Coach</td>
+          <td style="text-align: center;">Future Star Baseball</td>
+          <td style="text-align: center;">2021-2023</td>
+        </tr>
+      </table>
+    </section>
+    <section id="projects">
+      <article>
+        <h2>Projects</h2>
+        <div>
+          <h3>FireStarter (Deprecated)</h3>
+          <p> FireStarter is a free and open source Discord bot used to start, stop and manage options on your minecraft servers using Python  </p>
+          <a href="https://github.com/cherryyeti/FireStarter" style="color: red;" rel="noreferrer" target="_blank">You can view the source code here!</a>
+        </div>
+        <div>
+          <h3>SaveVault (In progress)</h3>
+          <p> SaveVault is a GTK program that allows you to backup and move your save files for Steam games using Proton.</p>
+        </div>
+      </article>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <input placeholder="Name" required></input>
+        <br/>
+        <br/>
+        <input type="text" name="email" placeholder="Email"  pattern="\w+@\w+\.\w+" required>
+        <br/>
+        <br/>
+
+        <input placeholder="Subject" required></input>
+        <br/>
+        <br/>
+
+        <textarea placeholder="Message" required style="width:20vw; max-width:600px"></textarea>
+        <br/>
+        <br/>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+
+  </main>
+  <footer>
+    <p>&copy; 2025 Jason Javandel. All rights reserved.</p>
+    <p>Feel free to contact me at <a href="mailto:definentlymyrealemail@protonmail.com" style="color: red;"/>definentlymyrealemail@protonmail.com</p>
+    <a href="https://www.linkedin.com/in/jason-javandel-b35348262/" style="color: red;" rel="noreferrer" target="_blank">My Linkedin</a>
+  </footer>
+</body>
 </html>
