@@ -351,7 +351,7 @@ textarea {
     }
 
     iframe {
-        width: 90vw;
+        max-width: 50vw;
     }
 
     table {
