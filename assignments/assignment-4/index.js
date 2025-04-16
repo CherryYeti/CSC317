@@ -153,6 +153,60 @@ function handleEquals() {
   updateDisplay();
 }
 
+document.addEventListener("keydown", (event) => {
+  if (
+    [
+      "+",
+      "-",
+      "*",
+      "/",
+      "=",
+      "Enter",
+      ".",
+      "%",
+      "Escape",
+      "Backspace",
+      "Delete",
+    ].includes(event.key) ||
+    (event.key >= "0" && event.key <= "9")
+  ) {
+    event.preventDefault();
+  }
+
+  if (
+    displayValue === "Error" &&
+    event.key !== "Escape" &&
+    event.key !== "Delete" &&
+    event.key !== "Backspace"
+  ) {
+    return;
+  }
+
+  if (event.key >= "0" && event.key <= "9") {
+    handleNumberInput(event.key);
+  } else if (event.key === ".") {
+    handleDecimal();
+  } else if (event.key === "+") {
+    handleOperation("+");
+  } else if (event.key === "-") {
+    handleOperation("-");
+  } else if (event.key === "*" || event.key === "x") {
+    handleOperation("x");
+  } else if (event.key === "/") {
+    handleOperation("÷");
+  } else if (event.key === "=" || event.key === "Enter") {
+    handleEquals();
+  } else if (
+    event.key === "Escape" ||
+    event.key === "Delete" ||
+    event.key === "Backspace"
+  ) {
+    clearCalculator();
+  } else if (event.key === "%") {
+    calculatePercentage();
+  }
+});
+
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     if (displayValue === "Error" && button.textContent !== "AC") {
