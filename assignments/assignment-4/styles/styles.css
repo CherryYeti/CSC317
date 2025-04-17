@@ -1,391 +1,406 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Inter", sans-serif;
-    transition: all 300ms ease;
-    /* centers all content */
-    margin-left: auto;
-    margin-right: auto;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  transition: all 300ms ease;
+  /* centers all content */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Define colors */
 :root {
-    --text: #d4dbf8;
-    --background: #02050e;
-    --primary: #829ce9;
-    --secondary: #961a5e;
-    --accent: #da3e2b;
-    --overlay: #0000004d;
+  --text: #d4dbf8;
+  --background: #02050e;
+  --primary: #829ce9;
+  --secondary: #961a5e;
+  --accent: #da3e2b;
+  --overlay: #0000004d;
 }
 
 /* Set a background image. I don't know how to do this effect in pure css yet, so I just blurred a nice looking image */
 body {
-    background-image: url("../images/background.jpg");
-    min-width: 100%;
-    min-height: 100%;
-    background-size: cover;
-    background-position: center;
-    color: var(--text);
+  background-image: url("../images/background.jpg");
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+  color: var(--text);
 }
 
 main {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 section {
-    margin-bottom: 40px;
-    width: 50vw;
+  margin-bottom: 40px;
+  width: 50vw;
 }
 
 article {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 section div {
-    background: var(--overlay);
+  background: var(--overlay);
 }
 
 /* stick navbar */
 nav {
-    background-color: var(--overlay);
-    position: sticky;
-    top: 0;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(10px);
+  background-color: var(--overlay);
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
 }
 
 nav ul {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    list-style: none;
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
 }
 
 nav li {
-    display: block;
-    color: var(--text);
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-    transition: transform 300ms ease;
-    display: inline-block;
-    margin: 0 10px;
+  display: block;
+  color: var(--text);
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  transition: transform 300ms ease;
+  display: inline-block;
+  margin: 0 10px;
 }
 
 nav li a {
-    color: white;
-    text-decoration: none;
-    display: inline-block;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
 }
 
 nav li a:hover {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 a {
-    color: var(--primary);
+  color: var(--primary);
 }
 
 img {
-    border-radius: 10px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* make section header pop */
 h2 {
-    color: var(--text);
-    font-size: 3rem;
-    margin-bottom: 4px;
-    text-decoration: underline;
-    text-decoration-color: var(--accent);
+  color: var(--text);
+  font-size: 3rem;
+  margin-bottom: 4px;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
 }
 
 section h2 {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 /* center iframe and set width */
 iframe {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 /* center table */
 table {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 table th,
 table td {
-    text-align: center;
+  text-align: center;
 }
 
 .theme-switcher {
-    text-align: center;
+  text-align: center;
 }
 
 .theme-buttons {
-    justify-content: center;
+  justify-content: center;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
 
 header h1 {
-    text-align: center;
+  text-align: center;
 }
 
 #school p,
 #school a {
-    text-align: center;
+  text-align: center;
 }
 #school div {
-    border-radius: 10px;
-    padding: 20px;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 #school h2 {
-    text-decoration-color: var(--primary);
+  text-decoration-color: var(--primary);
 }
 
 #school img {
-    width: 100%;
-    max-width: 50vw;
+  width: 100%;
+  max-width: 50vw;
 }
 #hobbies {
-    background: none;
+  background: none;
 }
 #hobbies h2 {
-    text-decoration-color: var(--primary);
+  text-decoration-color: var(--primary);
 }
 #hobbies ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 40px;
-    border-radius: 10px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  border-radius: 10px;
 }
 
 #hobbies li {
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    background: var(--overlay);
-    font-size: 1.5rem;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  background: var(--overlay);
+  font-size: 1.5rem;
 }
 
 #hometown div {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    border-radius: 10px;
-    padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 20px;
 }
 
 #hometown h2 {
-    color: var(--text);
+  color: var(--text);
 }
 
 #hometown img {
-    width: 100%;
-    max-width: 50vw;
+  width: 100%;
+  max-width: 50vw;
 }
 
 #about div {
-    border-radius: 10px;
-    padding: 20px;
-    align-items: center;
+  border-radius: 10px;
+  padding: 20px;
+  align-items: center;
 }
 
 #about h2 {
-    text-decoration-color: var(--primary);
+  text-decoration-color: var(--primary);
 }
 
 #about p {
-    margin: 0px 20px 20px 20px;
+  margin: 0px 20px 20px 20px;
 }
 
 #about img {
-    width: 100%;
-    max-width: 50vw;
+  width: 100%;
+  max-width: 50vw;
 }
 
 #education ul {
-    gap: 20px;
-    border-radius: 10px;
-    padding: 40px 20px 40px 20px;
+  gap: 20px;
+  border-radius: 10px;
+  padding: 40px 20px 40px 20px;
 }
 
 #experience table {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    border-spacing: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  border-spacing: 10px;
 }
 
 #experience h2 {
-    text-decoration-color: var(--primary);
+  text-decoration-color: var(--primary);
 }
 
 #experience th {
-    background-color: var(--overlay);
-    border-radius: 10px;
-    font-size: 1.5rem;
-    padding: 10px 20px 10px 20px;
+  background-color: var(--overlay);
+  border-radius: 10px;
+  font-size: 1.5rem;
+  padding: 10px 20px 10px 20px;
 }
 #experience td {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 
 #projects article {
-    display: flex;
-    padding: 20px;
+  display: flex;
+  padding: 20px;
 }
 #projects article div {
-    background-color: var(--overlay);
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
+  background-color: var(--overlay);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
 }
 #projects article h3 {
-    font-size: 1.5rem;
-    padding-bottom: 10px;
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+#projects article div img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin-bottom: 10px;
+}
+
+/* Specifically target the calculator image */
+#projects article div:nth-child(3) img {
+  max-height: 350px;
+  object-fit: contain;
+  margin: 0 auto;
 }
 
 #contact form {
-    display: inline-block;
-    text-align: left;
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    margin-right: 10%;
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
 }
 #contact input[type="text"],
 textarea {
-    width: 100%;
-    background-color: #0000004d;
-    border: 1px solid var(--accent);
-    border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 10px;
-    color: white;
+  width: 100%;
+  background-color: #0000004d;
+  border: 1px solid var(--accent);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: white;
 }
 
 #contact input[type="submit"] {
-    margin-top: 50px;
-    width: 50%;
-    color: white;
-    background-color: var(--overlay);
-    border: 0;
-    border-radius: 12px;
-    padding: 10px;
-    transition: 0.3s ease-in-out;
-    margin-left: 25%;
-    border: 1px solid var(--accent);
-    cursor: pointer;
+  margin-top: 50px;
+  width: 50%;
+  color: white;
+  background-color: var(--overlay);
+  border: 0;
+  border-radius: 12px;
+  padding: 10px;
+  transition: 0.3s ease-in-out;
+  margin-left: 25%;
+  border: 1px solid var(--accent);
+  cursor: pointer;
 }
 
 #contact input[type="submit"]:hover {
-    background-color: var(--accent);
+  background-color: var(--accent);
 }
 @media screen and (max-width: 768px) {
-    nav {
-        position: sticky;
-        top: 0;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-    }
+  nav {
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
 
-    nav ul {
-        display: flex;
-        /* flex-direction: column; */
-        overflow: scroll;
-        gap: 10px;
-        width: 100%;
-        text-align: center;
-        margin-left: auto;
-    }
+  nav ul {
+    display: flex;
+    /* flex-direction: column; */
+    overflow: scroll;
+    gap: 10px;
+    width: 100%;
+    text-align: center;
+    margin-left: auto;
+  }
 
-    nav li {
-        padding: 8px 16px;
-        display: block;
-    }
+  nav li {
+    padding: 8px 16px;
+    display: block;
+  }
 
-    nav li a {
-        white-space: nowrap;
-        padding-left: 0;
-    }
+  nav li a {
+    white-space: nowrap;
+    padding-left: 0;
+  }
 
-    h2 {
-        font-size: 2rem;
-    }
+  h2 {
+    font-size: 2rem;
+  }
 
-    section {
-        width: 90vw;
-    }
+  section {
+    width: 90vw;
+  }
 
-    img {
-        max-width: 90vw;
-    }
+  img {
+    max-width: 90vw;
+  }
 
-    iframe {
-        max-width: 50vw;
-    }
+  iframe {
+    max-width: 50vw;
+  }
 
-    table {
-        width: 90vw;
-    }
+  table {
+    width: 90vw;
+  }
 
-    form {
-        width: 90vw;
-    }
+  form {
+    width: 90vw;
+  }
 
-    #hobbies ul {
-        flex-direction: column;
-        padding: 20px;
-    }
+  #hobbies ul {
+    flex-direction: column;
+    padding: 20px;
+  }
 
-    #hobbies li {
-        width: 100%;
-        text-align: center;
-    }
+  #hobbies li {
+    width: 100%;
+    text-align: center;
+  }
 
-    #projects article {
-        flex-direction: column;
-    }
+  #projects article {
+    flex-direction: column;
+  }
 
-    #projects article div {
-        /* width: 90vw; */
-    }
+  #projects article div {
+    /* width: 90vw; */
+  }
 
-    #contact form {
-        width: 90vw;
-    }
+  #contact form {
+    width: 90vw;
+  }
 
-    #contact input[type="submit"] {
-        width: 100%;
-        margin-left: 0;
-    }
+  #contact input[type="submit"] {
+    width: 100%;
+    margin-left: 0;
+  }
 }
