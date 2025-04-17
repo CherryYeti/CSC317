@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculator {
+  background-color: #000;
+  width: 100%;
+  max-width: 375px;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.display {
+  text-align: right;
+  color: white;
+  font-size: 80px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  padding: 20px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 120px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 12px;
+}
+
+button {
+  border: none;
+  border-radius: 50%;
+  font-size: 30px;
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 0.2s;
+}
+
+button:active {
+  filter: brightness(130%);
+}
+
+.number {
+  background-color: #333333;
+  color: white;
+}
+
+.utility {
+  background-color: #a5a5a5;
+  color: black;
+}
+
+.operation {
+  background-color: #ff9f0a;
+  color: white;
+}
+
+.zero {
+  grid-column: span 2;
+  width: 100%;
+  border-radius: 40px;
+  padding-left: 32px;
+  justify-content: flex-start;
+}
+
+@media (max-width: 400px) {
+  .calculator {
+    padding: 10px;
+  }
+
+  button {
+    height: 70px;
+    width: 70px;
+    font-size: 26px;
+  }
+
+  .display {
+    font-size: 60px;
+    min-height: 100px;
+  }
+}

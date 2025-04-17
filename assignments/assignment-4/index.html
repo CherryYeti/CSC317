@@ -1,40 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="./index.css">
+  <meta charset="UTF-8">
+  <title>Jason Javandel - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio website for Jason Javandel">
+  <meta name="keywords" content="Jason Javandel, Portfolio, Web Development, Computer Science, Linux, Python, Flutter, React, Open Source">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="styles/min.css" id="css-theme">
+  <style>
+    /* Theme Switcher Styling */
+    .theme-switcher {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      padding: 12px;
+      z-index: 1000;
+    }
+
+    .theme-switcher h3 {
+      margin-top: 0;
+      margin-bottom: 10px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .theme-buttons {
+      display: flex;
+      gap: 8px;
+    }
+
+    .theme-button {
+      padding: 8px 12px;
+      background-color: #f0f0f0;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all 0.2s ease;
+    }
+
+    .theme-button:hover {
+      background-color: #e0e0e0;
+    }
+
+    .theme-button.active {
+      background-color: #007bff;
+      color: white;
+      border-color: #0069d9;
+    }
+  </style>
 </head>
 <body>
-    <div class="calculator">
-        <div class="display">0</div>
-        <div class="buttons">
-            <button class="utility">AC</button>
-            <button class="utility">+/-</button>
-            <button class="utility">%</button>
-            <button class="operation">÷</button>
-            
-            <button class="number">7</button>
-            <button class="number">8</button>
-            <button class="number">9</button>
-            <button class="operation">x</button>
-            
-            <button class="number">4</button>
-            <button class="number">5</button>
-            <button class="number">6</button>
-            <button class="operation">-</button>
-            
-            <button class="number">1</button>
-            <button class="number">2</button>
-            <button class="number">3</button>
-            <button class="operation">+</button>
-            
-            <button class="number zero">0</button>
-            <button class="number">.</button>
-            <button class="operation equals">=</button>
+
+  <nav>
+    <ul>
+      <li><a href="#school">School</a></li>
+      <li><a href="#hometown">Hometown</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Jason Javandel</h1>
+  </header>
+  <main>
+    <section id="school">
+      <h2>School</h2>
+      <div>
+        <img src="images/sfsu-logo.jpg" alt="San Francisco State University Logo">
+        <p>San Francisco State University</p>
+        <!-- iframe to OpenStreetMap -->
+        <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-122.48618602752687%2C37.718972229628875%2C-122.47671246528627%2C37.73013144497156&amp;layer=mapnik"></iframe>
+        <br>
+        <a href="https://www.openstreetmap.org/?#map=17/37.724552/-122.481449" >View Larger Map</a>
+      </div>
+    </section>
+    <section id="hometown">
+      <h2>Hometown</h2>
+      <div>
+        <img src="images/alameda.jpg" alt="Alameda Movie Theatre">
+        <p>Alameda, California</p>
+      </div>
+    </section>
+    <section id="about">
+      <h2>About Me</h2>
+      <div>
+        <p>
+          Hello! I am a third year college student who believes in open source projects. I am majoring in computer science, and I love creating! I've been an avid linux user and advocate for the last 5 years, and I love working in Python and more recently, Zig . I started making websites when I was around 12, and since, I have learned how to work in React and Svelte. 
+        </p>
+        <p>
+          Other than websites, I have spent considerable time learning Jetpack Compose and Flutter, both are framework for building native apps for Android. I am one of the few people who loves writing documentation, as I find it extremely rewarding to make things easier for other people to understand. I also love working on my homelab, and I'm quite familiar with Docker, though I want to learn how to use Proxmox and Kuberentes.
+        </p>
+        <p>I don't really have a professional photo, so here's one of my cats:</p>
+        <img src="images/holly.jpg" alt="A picture of a black cat on a couch">
+      </div>
+
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li>Alameda High School (2018-2022)</li>
+        <li>University of California, Merced (2022-2024)</li>
+        <li >San Francisco State University (2024-present)</li>
+      </ul>
+    </section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <table>
+        <tr>
+          <th>Position</th>
+          <th>Company</th>
+          <th>Dates</th>
+        </tr>
+        <tr>
+          <td>Assistant Coach</td>
+          <td >Future Star Baseball</td>
+          <td >2021-2023</td>
+        </tr>
+      </table>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <article>
+        <div>
+          <h3>FireStarter (Deprecated)</h3>
+          <p> FireStarter is a free and open source Discord bot used to start, stop and manage options on your minecraft servers using Python  </p>
+          <a href="https://github.com/cherryyeti/FireStarter" rel="noreferrer" target="_blank">You can view the source code here!</a>
         </div>
+        <div>
+          <h3>SaveVault (In progress)</h3>
+          <p> SaveVault is a GTK program that allows you to backup and move your save files for Steam games using Proton.</p>
+        </div>
+      </article>
+    </section>
+    <section id="hobbies">
+      <h2>Hobbies/Skills</h2>
+      <ul>
+        <li>Linux</li>
+        <li>Docker</li>
+        <li>Flutter</li>
+        <li>Python</li>
+        <li>React</li>
+        <li>3D Printing</li>
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form>
+        <input type="text" placeholder="Name" required>
+        <br>
+        <br>
+        <input type="text" name="email" placeholder="Email"  pattern="\w+@\w+\.\w+" required>
+        <br>
+        <br>
+        <input type="text" placeholder="Subject" required>
+        <br>
+        <br>
+
+        <textarea placeholder="Message" required ></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Jason Javandel. All rights reserved.</p>
+    <p>Feel free to contact me at <a href="https://www.linkedin.com/in/jason-javandel-b35348262/"  rel="noreferrer" target="_blank">My Linkedin</a>.</p>
+  </footer>
+  <!-- Theme Switcher -->
+  <div class="theme-switcher">
+    <h3>Theme Switcher</h3>
+    <div class="theme-buttons">
+      <button class="theme-button active" data-theme="styles">Hand-Written</button>
+      <button class="theme-button" data-theme="min">Minimalist</button>
+      <button class="theme-button" data-theme="creative">Creative</button>
+      <button class="theme-button" data-theme="pro">Professional</button>
+      <button class="theme-button" data-theme="crazy">Crazy</button>
+      <button class="theme-button" data-theme="ai-1">AI 1</button>
+      <button class="theme-button" data-theme="ai-2">AI 2</button>
+      <button class="theme-button" data-theme="ai-3">AI 3</button>
+      <button class="theme-button" data-theme="ai-4">AI 4</button>
+      <button class="theme-button" data-theme="ai-5">AI 5</button>
+      <button class="theme-button" data-theme="ai-3">AI Image</button>
+      <button class="theme-button" data-theme="hybrid">Hybrid</button>
     </div>
-    <script src="./index.js"></script>
+  </div>
+
+<!-- Theme Switcher Script -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+        // Get all theme buttons
+    const themeButtons = document.querySelectorAll('.theme-button');
+        // Get the stylesheet link element
+    const themeStylesheet = document.getElementById('css-theme');
+
+        // Function to set active theme
+    function setActiveTheme(themeName) {
+            // Update stylesheet href
+      themeStylesheet.href = `styles/${themeName}.css`;
+
+            // Update active button state
+      themeButtons.forEach(button => {
+        if (button.dataset.theme === themeName) {
+          button.classList.add('active');
+        } else {
+          button.classList.remove('active');
+        }
+      });
+
+            // Save preference to localStorage
+      localStorage.setItem('preferredTheme', themeName);
+    }
+
+        // Add click event to all theme buttons
+    themeButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const themeName = this.dataset.theme;
+        setActiveTheme(themeName);
+      });
+    });
+
+        // Check if there's a saved theme preference
+    const savedTheme = localStorage.getItem('preferredTheme');
+    if (savedTheme) {
+      setActiveTheme(savedTheme);
+    }
+  });
+</script>
 </body>
 </html>

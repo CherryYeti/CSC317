@@ -1,0 +1,1 @@
+I want you to create a css file for this HTML file. I want this css file to be styled similar to Apple’s design philosophy, with large headers and a clean, minimalist aesthetic. I would very much prefer to have the css be in dark mode.
